@@ -1,0 +1,1 @@
+Jesteśmy w trakcie przeglądania datasetów z Kaggle, w tym tygodniu już jakiś wybierzemy. Szukamy jeszcze osób do zespołu, pewnie ma sens pytać jak wybierzemy temat.
