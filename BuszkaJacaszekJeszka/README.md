@@ -1,0 +1,1 @@
+Chcemy stworzyć projekt raczej niezwiązany z tematyką finansową. Ten spotify brzmi interesująco.
