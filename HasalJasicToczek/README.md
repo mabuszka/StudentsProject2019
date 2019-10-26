@@ -1,3 +1,13 @@
-Chcemy projekt związany z tematyką finansową czy jakimś ryzykiem.
-Nie do końca wiemy na czym ma polegać ten projekt.
-Więc trudno nam znaleźc jakieś dane jak nie wiemy co z nimi bedziemy musieli zrobić.
+# Credit Risk Vis
+
+An R tool and Shiny application to visualize Credit Risk data. 
+The app can be accessed ... TBA.
+
+The main goal of this tool is to visualize relationships between different factors such as age and income and credit scoring, using for example the [German Credit Data](https://archive.ics.uci.edu/ml/datasets/Statlog+%28German+Credit+Data%29).
+
+Main functionalities:
+  - data import (csv),
+  - data summaries and filtering,
+  - visualization.
+  
+  
