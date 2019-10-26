@@ -1,1 +1,10 @@
-Dwie osoby z nas uczęszczają na Inżynierię Finansową 1, więc chętnie zrobimy projekt powiązany z tym przedmiotem. Jeśli się nie uda może być ogólniejszy temat finansowy. Jedna osoba z nas chce nauczyć się Shiny, więc chętnie zrobi w nim interfejs. Możemy przygarnąć jeszcze czwartą osobę, tylko nie wiemy kogo.
+# StockVis
+
+An R tools and Shiny application to visualize true and simulated prices of assets and options.
+The app can be accessed ... TBA
+
+Main functionalities:
+  - OHLCV data import,
+  - prices simulation,
+  - data summaries,
+  - visualization.
