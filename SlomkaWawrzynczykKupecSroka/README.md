@@ -8,3 +8,10 @@ Main functionalities:
   - prices simulation,
   - data summaries,
   - visualization.
+
+--Update--
+
+Niedawno się spotkaliśmy i omówiliśmy dokładnie podział pracy.
+Adam i Grzegorz zajmą się stroną funkcji analizujących dane, natomiast Natalia i Remigiusz stroną aplikacji i jej wyglądu.
+Za niedługo wrzucimy kod dotyczący symulacji trajektorii.
+
