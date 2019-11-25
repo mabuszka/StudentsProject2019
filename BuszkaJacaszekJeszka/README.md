@@ -20,6 +20,5 @@ Main functionalities:
     - how often you have monothematic "subsessions" in "sessions" (i.e. listening to songs from the same artist for a longer period of time in one session)
 
   - music taste and habits visualization.
-  -
  
 
