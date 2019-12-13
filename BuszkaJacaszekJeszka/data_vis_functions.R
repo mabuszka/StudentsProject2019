@@ -19,6 +19,7 @@ number_of_songs_listened_by_hour <- function(streaming_history, start_date, end_
   vis
 }
 
+##visualizes number of songs listened by weekday in given time period
 number_of_songs_listened_by_weekday <- function(streaming_history, start_date, end_date, dont_show_skipped = TRUE){
   filtered <- filter(streaming_history, start_time >= ymd(start_date), start_time <= ymd(end_date)) 
   if (dont_show_skipped) filtered <- filter(filtered, skipped == FALSE)
@@ -29,6 +30,8 @@ number_of_songs_listened_by_weekday <- function(streaming_history, start_date, e
     ylab("Songs listened")
   vis
 }
+
+##visualizes number of songs skipped in given time period, has two vesiorns - bar and point
 
 number_of_skipped_songs <- function(streaming_history, start_date, end_date, by = "day", type = "bar"){
   filtered <- filter(streaming_history, start_time >= ymd(start_date), start_time <= ymd(end_date), skipped == TRUE) %>% 
