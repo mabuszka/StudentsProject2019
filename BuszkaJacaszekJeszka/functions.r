@@ -47,12 +47,12 @@ add_weekday <- function(streaming_history){
 #### creating and preparing dataframe
 Streaming_History_Complete <- function(folder_path){
   Streaming_History_df(folder_path) %>%
-  names_change() %>% 
-  mutate(end_time = ymd_hm(end_time)) %>% 
-  mutate(s_played = dmilliseconds((s_played))) %>%
-  add_start_time() %>%
-  add_skipped() %>%
-  add_weekday()
+    names_change() %>% 
+    mutate(end_time = ymd_hm(end_time)) %>% 
+    mutate(s_played = dmilliseconds((s_played))) %>%
+    add_start_time() %>%
+    add_skipped() %>%
+    add_weekday()
   
 }
 
@@ -80,26 +80,26 @@ how_long_listened <- function(streaming_history, start_date, end_date, as_percen
 
 #which songs were played the most times in given time period
 most_played_track <- function(streaming_history, start_date, end_date, how_many = 10){
-  df <-filter(data, start_time >= ymd("2018-11-11"), start_time <= ymd("2019-01-01"), skipped == FALSE) %>% 
+  df <-filter(data, start_time >= ymd(start_date), start_time <= ymd(end_date), skipped == FALSE) %>% 
     group_by(track_name) %>% 
     summarise(number = n())
-    df <- df[order(-df[["number"]]),]
-    df[1:how_many,]
+  df <- df[order(-df[["number"]]),]
+  df[1:how_many,]
 }
 
 #which songs were skipped the most times in given time period
 most_skipped_track <- function(streaming_history, start_date, end_date, how_many = 10){
-    df <-filter(data, start_time >= ymd("2018-11-11"), start_time <= ymd("2019-01-01"), skipped == TRUE) %>% 
-      group_by(track_name) %>% 
-      summarise(number = n())
-    df <- df[order(-df[["number"]]),]
-    df[1:how_many,]
+  df <-filter(data, start_time >= ymd(start_date), start_time <= ymd(end_date), skipped == TRUE) %>% 
+    group_by(track_name) %>% 
+    summarise(number = n())
+  df <- df[order(-df[["number"]]),]
+  df[1:how_many,]
 }
 
 #which artists were played the most times in given time period
 most_played_track <- function(streaming_history, start_date, end_date, how_many = 10){
-  df <-filter(data, start_time >= ymd("2018-11-11"), start_time <= ymd("2019-01-01"), skipped == FALSE) %>% 
-    group_by(artist_name) %>% 
+  df <-filter(data, start_time >= ymd(start_date), start_time <= ymd(end_date), skipped == FALSE) %>% 
+    group_by(track_name) %>% 
     summarise(number = n())
   df <- df[order(-df[["number"]]),]
   df[1:how_many,]
@@ -107,8 +107,8 @@ most_played_track <- function(streaming_history, start_date, end_date, how_many 
 
 #which atrists were skipped the most times in given time period
 most_skipped_track <- function(streaming_history, start_date, end_date, how_many = 10){
-  df <-filter(data, start_time >= ymd("2018-11-11"), start_time <= ymd("2019-01-01"), skipped == TRUE) %>% 
-    group_by(artist_name) %>% 
+  df <-filter(data, start_time >= ymd(start_date), start_time <= ymd(end_date), skipped == TRUE) %>% 
+    group_by(track_name) %>% 
     summarise(number = n())
   df <- df[order(-df[["number"]]),]
   df[1:how_many,]
