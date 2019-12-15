@@ -22,3 +22,9 @@ number_of_songs_listened_by_weekday(streaming_history, "2018-10-21", "2018-11-21
 
 number_of_songs_listened_by_hour(streaming_history, "2018-10-21", "2018-11-21")
 number_of_songs_listened_by_hour(streaming_history, "2018-10-21", "2019-01-21", by_weekday = TRUE)
+
+
+platform_used(search_queries, "2019-10-01", "2019-10-21")
+platform_used_by_date(search_queries, "2019-01-01", "2019-10-21")
+
+country_by_date(search_queries, "2019-10-01", "2019-10-21")
